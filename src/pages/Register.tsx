@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
@@ -24,7 +23,6 @@ const Register = () => {
     address: "",
     city: "",
     state: "",
-    sponsorshipTier: "",
     message: "",
     hearAbout: ""
   });
@@ -257,38 +255,6 @@ const Register = () => {
               </div>
               
               <div className="space-y-6">
-                <h3 className="text-lg font-medium">Sponsorship Details</h3>
-                
-                <div className="space-y-3">
-                  <label className="text-sm font-medium">
-                    Preferred Sponsorship Tier <span className="text-red-500">*</span>
-                  </label>
-                  <RadioGroup 
-                    value={formData.sponsorshipTier} 
-                    onValueChange={(value) => handleSelectChange("sponsorshipTier", value)}
-                    required
-                  >
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="platinum" id="platinum" />
-                        <Label htmlFor="platinum">Platinum (₹25,00,000)</Label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="gold" id="gold" />
-                        <Label htmlFor="gold">Gold (₹15,00,000)</Label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="silver" id="silver" />
-                        <Label htmlFor="silver">Silver (₹10,00,000)</Label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="bronze" id="bronze" />
-                        <Label htmlFor="bronze">Bronze (₹5,00,000)</Label>
-                      </div>
-                    </div>
-                  </RadioGroup>
-                </div>
-                
                 <div className="space-y-2">
                   <label htmlFor="hearAbout" className="text-sm font-medium">
                     How did you hear about us? <span className="text-red-500">*</span>
@@ -377,3 +343,4 @@ const Register = () => {
 };
 
 export default Register;
+
