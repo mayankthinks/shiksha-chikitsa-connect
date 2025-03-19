@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { ChevronRight, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,17 +62,19 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button 
-                variant="default" 
-                size="sm" 
-                className="ml-4 group" 
-                asChild
-              >
-                <Link to="/register">
-                  Become a Sponsor
-                  <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
+              
+              <div className="ml-4">
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  asChild
+                >
+                  <Link to="/register">
+                    Sponsorship Registration
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -125,12 +127,11 @@ const Navbar = () => {
             <Button 
               variant="default" 
               size="sm" 
-              className="w-full" 
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
               asChild
             >
               <Link to="/register" onClick={() => setMobileMenuOpen(false)}>
-                Become a Sponsor
-                <ChevronRight className="ml-1 h-4 w-4" />
+                Sponsorship Registration
               </Link>
             </Button>
           </div>
