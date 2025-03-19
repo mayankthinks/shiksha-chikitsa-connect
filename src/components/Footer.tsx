@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <span className="font-display text-xl font-bold text-primary">
-                Shiksha<span className="text-accent">&</span>Chikitsa
+                YuvaShakti
               </span>
             </div>
             <p className="text-muted-foreground text-sm max-w-xs">
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border/40">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Shiksha & Chikitsa. All rights reserved.
+              © {new Date().getFullYear()} YuvaShakti. All rights reserved.
             </p>
             <div className="mt-4 sm:mt-0">
               <ul className="flex space-x-6">

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -259,8 +258,30 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Journey Section */}
+      <section className="py-20 bg-secondary relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent -z-10" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading 
+            title="Some Glimpse of Our Journey"
+            subtitle="Explore our past events, partnerships, and the impact we've made throughout our journey."
+            centered
+          />
+          
+          <div className="mt-12 animate-fade-up">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="/lovable-uploads/86fb8aa4-d80e-4af8-889f-84aa07467fe3.png" 
+                alt="YuvaShakti Journey Collage" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-20 bg-secondary">
+      <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
             title="What People Say"

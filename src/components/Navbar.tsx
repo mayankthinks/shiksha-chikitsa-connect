@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className="font-display text-xl font-bold text-primary">
-                Shiksha<span className="text-accent">&</span>Chikitsa
+                YuvaShakti
               </span>
             </Link>
           </div>
